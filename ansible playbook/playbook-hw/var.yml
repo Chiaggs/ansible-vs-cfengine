@@ -1,0 +1,5 @@
+subnet_number: "2"
+subnet_range: "123.11.1.0/24,123.12.1.0/24"
+container_numbers: "1,1"
+
+#{{vpc_name}} {{subnet_number}} {{subnet_range}} {{vm_num}}

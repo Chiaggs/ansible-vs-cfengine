@@ -1,0 +1,70 @@
+   - name: Create LC Containers ( LC1 and LC2 )
+     docker_container:
+      image: pmalik3311/team1quagganew
+      name: "LC{{ item }}"
+      state: started
+      tty: yes
+      privileged: yes
+     with_sequence: count={{subnet_number}}
+  
+   
+   
+   
+   
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+   
+   
+   
+   
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+   
+   
+   
+   
+   
+   
+   
+   

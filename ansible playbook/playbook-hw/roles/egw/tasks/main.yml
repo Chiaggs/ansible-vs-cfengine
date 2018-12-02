@@ -1,0 +1,83 @@
+   - name: Install Docker
+     apt: pkg={{ item }} state=present update_cache=yes cache_valid_time=1800
+     with_items:
+         - docker.io
+         - python2.7
+         - python-pip
+     become: yes
+
+   - name: Install docker-py
+     become: yes
+     pip:
+      name: docker-py
+
+   - name: Pull images
+     docker_image:
+       name: "{{ item }}" 
+     with_items: 
+         - pmalik3311/team1ubuntu
+         - pmalik3311/team1quagga
+         - pmalik3311/team1quagganew
+
+   - name: Create BGP folder
+     file:
+      path: /root/playbook_logs/bgpFiles
+      state: directory
+      mode: 0755
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  

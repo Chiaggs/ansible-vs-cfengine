@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  gather_facts: no
+  vars_files: 
+    - var.yml
+  roles:
+    - egw
+    - igw
+
+

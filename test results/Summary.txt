@@ -1,0 +1,21 @@
+Performance: We executed two scripts, which does exactly the same work (i.e to check for installation of docker, and create containers), in both setups (CFEngine-docker and ansible-docker), and noted the time to execute the script, by marking the time at which execution started and finished. We used 4 different systems for running the same, and though the absolute performance of setup varied with the hardware, the relative performance difference was about the same. We found out that ansible was around 15-25% slower as compared to CFEngine, in almost all the scenarios we tested. The results obtained were variable enough to account for the margin or error. 
+
+Reason: Most probably, the reason for CFEngine being faster than ansible is the fact that it was designed to be so. It is written in C and is also very light weight in terms of resource utilisation. Also, it is a tad less feature laden than ansible, which could account for the increased raw performance portrayed by CFEngine.
+
+Ease of Use: As we can deduce from our survey among developers, people generally found CFEngine much harder to use in-general, as compared to Ansible. Not only ansible was a more popular choice, but also beats CFEngine in terms of ease of use drastically. Personally, we also faced a lot of difficulties configuring and setting up CFEngine, due to the lack of tutorials, a significantly smaller and concentrated community, and the lack of other online resources. Also, we found that anible has a very lucid and detailed documentation, whereas CFEngine lacks proper documentation with examples, which might have also contributed to this factor. Though, the community for CFEngine was indeed very helpful, but as it turns out, having proper tutorials and documentation is more effective and intuitive than having a helpful community.
+
+Functionality: Of the people we surveyed, Ansible turned out to be far more functionally superior than CFEngine equivocally. From a functional point of view, CFEngine had a mixed set of reviews, from people finding it deprived of functionalities, to people finding it sufficient of. The fact that CFEngine lacks cloud support, and relies on many of its protocols might have curbed the functionality of CFEngine. Also, the main idea behind CFEngine was to deliver a powerful, fast, lightweight and a scalable system, and it does deliver on those aspects. Hence, providing a diverse set of functionalities as Ansible might not have been a goal of the designers of the system.
+
+Familiarity: Though CFEngine was released way before Ansible, still ansible is far more popular than CFEngine. Of the 75 resposes from the developers at NCSU, 98.2% (about 74) knew about Ansible, where-as only about 16% of them were familiar with CFEngine. The main reason behind this phenomenon could be the fact that Ansible being agentless, and communicating via SSH, it much easier to configure, setup and operate as compared to CFEngine, which lacks this benefit. The lack of proper marketing and ready to use modules for CFEngine could also account for this fact.
+
+Compatibility with tools: The results for this metric are strikingly similar to the functionality metric. Being compatible with a wide array of tools available in the market is itself a functionality in itself. Also, the result could explain why ansible is more popular than CFEngine. A developer is less likely to migrate to a tool why isn't much compatible with other tools available online.
+
+Learning Curve: From the survey of about 75 developers, it is clear that ansible has a far better learning curve than CFEngine, that is, Ansible is easier to understand and get used to than CFEngine. The main reason for this could be the fact that since ansible modules are accessed via shell calls, therefore developers can get the freedom to work with their language or runtime of choice. Also, the fact that certain tasks could directly be executed from the command line bolsters this phenomenon. 
+
+
+
+
+
+
+
+

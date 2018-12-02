@@ -19,11 +19,6 @@
          - pmalik3311/team1quagga
          - pmalik3311/team1quagganew
 
-   - name: Create BGP folder
-     file:
-      path: /root/playbook_logs/bgpFiles
-      state: directory
-      mode: 0755
 
   
   

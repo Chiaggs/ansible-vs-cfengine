@@ -4,7 +4,7 @@ In this project we compared the Continuous Management tools, Ansible and CFEngin
 Team Members:
 1. Harshada Naik (hnaik@ncsu.edu)
 2. Maharsh Patel (mkpatel5@ncsu.edu)
-3. Palash Hariyani (phhariya@ncsu.edu)
+3. Palash Hariyani (phhariya6@ncsu.edu)
 4. Chiranjivi Agarwal (cagarwa3@ncsu.edu)
 
 Team ID: R_EWAFUH
